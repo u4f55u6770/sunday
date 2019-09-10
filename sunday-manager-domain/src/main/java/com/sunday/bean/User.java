@@ -1,12 +1,17 @@
 package com.sunday.bean;
 
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.annotations.TableName;
+
 /**
  * @auther u4f55u6770
  * @date: 2019/8/28 09:14
  * @description:
  */
+@TableName("user")
 public class User {
 
+    @TableId
     private int id;
     private String name;
     private int age;
